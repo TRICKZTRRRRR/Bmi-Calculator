@@ -14,13 +14,11 @@ namespace Bmi_Calculator
             // Set the title of the console window
             Console.Title = "BMI Calculator";
 
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.White;
-
             // Start an infinite loop for continuous calculations
             while (true)
             {
                 // Clear the console screen
+                
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.White;
 
