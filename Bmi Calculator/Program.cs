@@ -26,20 +26,14 @@ namespace Bmi_Calculator
 
                 // Prompt for weight input
                 Console.WriteLine("Weight");
-                string cmWeight = Console.ReadLine();
+                double cmWeight = double.Parse(Console.ReadLine());
 
                 // Prompt for height input
                 Console.WriteLine("\r\nHeight");
-                string cmHeight = Console.ReadLine();
-
-                double cmW, cmH;
-
-                // Convert input strings to numeric values
-                double.TryParse(cmWeight, out cmW);
-                double.TryParse(cmHeight, out cmH);
+                double cmHeight = double.Parse(Console.ReadLine());
 
                 // Calculate BMI using the formula: BMI = (weight / height^2) * 10000
-                double cmCalculation = (cmW / Math.Pow((cmH), 2)) * 10000;
+                double cmCalculation = (cmWeight / Math.Pow((cmHeight), 2)) * 10000;
 
                 // Display the calculated BMI
                 Console.WriteLine("\r\nBMI = " + cmCalculation.ToString("0.##"));
