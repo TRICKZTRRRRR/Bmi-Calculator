@@ -17,8 +17,7 @@ namespace Bmi_Calculator
             // Start an infinite loop for continuous calculations
             while (true)
             {
-                // Clear the console screen
-                
+                // Clear the console screen and change the color to White
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.White;
 
